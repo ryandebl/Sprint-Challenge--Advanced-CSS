@@ -3,4 +3,10 @@
 .btn-colors (@text-color, @bg-color) {
     color: @text-color;
     background-color: @bg-color;
+
+    $:hover {
+        color: @bg-color;
+        background-color: @text-color;
+    }
 }
+
