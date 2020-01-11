@@ -168,20 +168,29 @@ h1 {
   font-size: 48px;
   text-align: center;
   align-items: center;
+  margin: auto;
 }
 nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: #F6F6F6;
-  width: 50%;
-  margin-left: 25%;
+  width: 100%;
+}
+nav .links {
+  margin-left: 41%;
+}
+@media (max-width: 500px) {
+  nav .links {
+    margin-left: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
 }
 nav a {
   padding: 1%;
   color: #23293B;
   font-size: 18px;
-  background-color: #F6F6F6;
   text-decoration: none;
 }
 footer {
@@ -267,6 +276,12 @@ footer {
   font-size: large;
   padding: 8px 24px;
   border-radius: 8px;
+  color: white;
+  background-color: black;
+  color: black;
+  background-color: white;
+}
+.home .walk .walk-text .btn:hover {
   color: white;
   background-color: black;
 }
