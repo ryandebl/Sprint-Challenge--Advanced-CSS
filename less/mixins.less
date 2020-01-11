@@ -1,12 +1,16 @@
 // Mixins Here
 
-.btn-colors (@text-color, @bg-color) {
-    color: @text-color;
-    background-color: @bg-color;
+.btn-colors (@tc, @bgc){
+    color: @tc;
+    background-color: @bgc;
 
-    $:hover {
-        color: @bg-color;
-        background-color: @text-color;
+    &:hover {
+        color: @bgc;
+        background-color: @tc;
     }
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+}

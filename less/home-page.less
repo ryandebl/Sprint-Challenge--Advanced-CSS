@@ -1,42 +1,12 @@
 // Home Content
 
-h1 {
-  font-size: 48px;
-  text-align: center;
-  align-items: center;
-  
-  
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: @wild-sand;
-  width: 50%;
-  margin-left: 25%;
-
-
-
-  a {
-    padding: 1%;
-    color: @ebony-clay;
-    font-size: 18px;
-    background-color: @wild-sand;
-    text-decoration: none;
-    align-items: ;
-        
-  }
-}
-
-
-
-
-
-
 .home {
 
   .intro {
+
+    .header-img {
+      border-radius: 4px;
+    }
 
     h2 {
       padding: 15px;
@@ -52,6 +22,20 @@ nav {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+
+      .blast {
+        width: 100%;
+      }
+    }
 
     img {
       width: 28%;
@@ -77,11 +61,22 @@ nav {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex-center();
+
+    @media @phone {
+      
+      padding: 10px;
+      flex-direction: column-reverse; 
+        
+    }
 
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+        padding-top: 5%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -96,7 +91,17 @@ nav {
         font-size: large; 
         padding: 8px 24px;
         border-radius: 8px;
-        .btn-colors (white, black)
+        color: white;
+        background-color: black;
+
+      
+
+        @media @phone {
+          width: 100%;
+          padding: 14px 225px;
+        }
+
+        
 
         
       }
@@ -105,7 +110,12 @@ nav {
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        width: 100%;
+      }
+
+  
       img {
         width: 100%;
         height: auto;
